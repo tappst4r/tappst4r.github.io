@@ -6,95 +6,131 @@
     <title>My Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f8f9fa;
+            color: #333;
         }
         header {
-            background: #333;
+            background: #222;
             color: white;
-            padding: 1rem;
+            padding: 2rem 0;
             text-align: center;
+        }
+        header img {
+            border-radius: 50%;
+            border: 4px solid white;
+            width: 120px;
+            height: 120px;
+            margin-bottom: 10px;
         }
         section {
             padding: 20px;
-            max-width: 800px;
+            max-width: 1000px;
             margin: auto;
             background: white;
             margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        section:hover {
+            transform: scale(1.02);
         }
         h2 {
-            color: #333;
+            color: #222;
+            text-align: center;
         }
         .projects {
-            column-count: 2;
-            column-gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
         }
         .project {
-            display: inline-block;
-            width: 100%;
-            margin-bottom: 20px;
             background: #fff;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .project a:hover {
+            background: #0056b3;
         }
         .contact {
             text-align: center;
+        }
+        .contact a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 <header>
-    <img src="assets/cvpic.jpg" width="150" height="150" style="border-radius: 50%;">
+    <img src="assets/cvpic.jpg" alt="Christopher Jacob Ong">
     <h1>Christopher Jacob Ong</h1>
     <p>Web Developer | Freelancer</p>
 </header>
 
-    
-    <section>
-        <h2>About Me</h2>
-        <p>Hi, I'm Christopher Jacob Ong, a passionate web developer with experience in creating dynamic and responsive websites.</p>
-    </section>
-    
-    <section>
-        <h2>Projects</h2>
-        <div class="projects">
-            <div class="project">
-                <h3>R.G.S. Trip Ticket System</h3>
-                <p>A web application designed to manage trip ticket requests efficiently.</p>
-                <p>Technologies used: Node.js, Express, MySQL, JavaScript</p>
-                <a href="https://github.com/oatlord/R.G.S.-Trip-Ticket-System" target="_blank">GitHub Repository</a>
-            </div>
-            <div class="project">
-                <h3>Portfolio Website</h3>
-                <p>A personal portfolio showcasing my work.</p>
-            </div>
-            <div class="project">
-                <h3>School Coding Projects</h3>
-                <p>A list of projects I've worked on during my time at school.</p>
-                <a href="https://github.com/tappst4r/VehiPark1.2" target="_blank">Time Logging for Student's Vehicles</a>
-            </div>
+<section>
+    <h2>About Me</h2>
+    <p>Hi, I'm Christopher Jacob Ong, a passionate web developer with experience in creating dynamic and responsive websites.</p>
+</section>
+
+<section>
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>R.G.S. Trip Ticket System</h3>
+            <p>A web application designed to manage trip ticket requests efficiently.</p>
+            <p>Technologies: Node.js, Express, MySQL, JavaScript</p>
+            <a href="https://github.com/oatlord/R.G.S.-Trip-Ticket-System" target="_blank">GitHub Repo</a>
         </div>
-    </section>
-    
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>React, Vue.js</li>
-            <li>Node.js, Express</li>
-            <li>Database Management</li>
-        </ul>
-    </section>
-    
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>Email: tappst4r@gmail.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/christopher-jacob-ong-4ab37028b/" target="_blank">Christopher Jacob Ong</a></p>
-    </section>
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio showcasing my work.</p>
+        </div>
+        <div class="project">
+            <h3>School Coding Projects</h3>
+            <p>A list of projects I've worked on during my time at school.</p>
+            <a href="https://github.com/tappst4r/VehiPark1.2" target="_blank">View Project</a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React, Vue.js</li>
+        <li>Node.js, Express</li>
+        <li>Database Management</li>
+    </ul>
+</section>
+
+<section class="contact">
+    <h2>Contact</h2>
+    <p>Email: tappst4r@gmail.com</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/christopher-jacob-ong-4ab37028b/" target="_blank">Christopher Jacob Ong</a></p>
+</section>
 </body>
 </html>
