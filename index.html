@@ -29,6 +29,19 @@
         h2 {
             color: #333;
         }
+        .projects {
+            column-count: 2;
+            column-gap: 20px;
+        }
+        .project {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 20px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
         .contact {
             text-align: center;
         }
@@ -36,7 +49,7 @@
 </head>
 <body>
     <header>
-        <img src="assets/cvpicture.jpg" alt="John Doe" width="150" height="150" style="border-radius: 50%;">
+        <img src="assets/cvpicture.jpg" alt="Christopher Jacob Ong" width="150" height="150" style="border-radius: 50%;">
         <h1>Christopher Jacob Ong</h1>
         <p>Web Developer | Freelancer</p>
     </header>
@@ -48,11 +61,23 @@
     
     <section>
         <h2>Projects</h2>
-        <ul>
-            <li><strong>Portfolio Website</strong> - A personal portfolio showcasing my work.</li>
-            <li><strong> School Coding Projects</strong> - A list of projects I've worked on during my time at school.</li>
-            <ul><a href = "https://github.com/tappst4r/VehiPark1.2">  - Time Logging for Student's Vehicles</a></ul>
-        </ul>
+        <div class="projects">
+            <div class="project">
+                <h3>R.G.S. Trip Ticket System</h3>
+                <p>A web application designed to manage trip ticket requests efficiently.</p>
+                <p>Technologies used: Node.js, Express, MySQL, JavaScript</p>
+                <a href="https://github.com/oatlord/R.G.S.-Trip-Ticket-System" target="_blank">GitHub Repository</a>
+            </div>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio showcasing my work.</p>
+            </div>
+            <div class="project">
+                <h3>School Coding Projects</h3>
+                <p>A list of projects I've worked on during my time at school.</p>
+                <a href="https://github.com/tappst4r/VehiPark1.2" target="_blank">Time Logging for Student's Vehicles</a>
+            </div>
+        </div>
     </section>
     
     <section>
@@ -68,9 +93,7 @@
     <section class="contact">
         <h2>Contact</h2>
         <p>Email: tappst4r@gmail.com</p>
-        <p>LinkedIn: linkedin.com/in/christopher-jacob-ong-4ab37028b/</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/christopher-jacob-ong-4ab37028b/" target="_blank">Christopher Jacob Ong</a></p>
     </section>
-
-
 </body>
 </html>
