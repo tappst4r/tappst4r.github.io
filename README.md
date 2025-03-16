@@ -52,11 +52,11 @@ Create a `.env` file in the root directory and add the following:
 ### 5️⃣ Database Setup
 Log in to MySQL and create the database:
 ```sql
- CREATE DATABASE trip_ticket_db;
+ CREATE DATABASE ticket_and_material_requester_db;
 ```
 Import the provided SQL dump:
 ```sh
- mysql -u root -p trip_ticket_db < database.sql
+ mysql -u root -p ticket_and_material_requester_db < database.sql
 ```
 
 ### 6️⃣ Run the Application
@@ -69,7 +69,7 @@ The app should now be running on **`http://localhost:3000`**.
 
 ## 🔧 Troubleshooting
 ### 1️⃣ Common Issues & Fixes
-- **Port Already in Use:** Change the port in `server.js` or kill the existing process.
+- **Port Already in Use:** Change the port in `server.js` or terminate the existing process.
 - **Database Connection Issues:** Double-check `.env` credentials and ensure MySQL is running.
 - **Module Not Found:** Run `npm install` again to ensure all dependencies are installed.
 
