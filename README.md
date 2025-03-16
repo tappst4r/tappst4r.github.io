@@ -80,5 +80,5 @@ For additional support, feel free to open an issue in the [GitHub repository](ht
 
 ## 👤 Author
 **Christopher Jacob Ong**
-- GitHub: [oatlord](https://github.com/oatlord)
+- GitHub: [tappst4r]([https://github.com/oatlord](https://github.com/tappst4r))
 - LinkedIn: [Christopher Jacob Ong](https://linkedin.com/in/christopher-jacob-ong-4ab37028b/)
